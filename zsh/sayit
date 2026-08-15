@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# This is a simple bash script to help me get into GitLab vs GitHub and Bitbucket!
+echo $1
