@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 # This is a simple bash script to help me get into GitLab vs GitHub and Bitbucket!
+# Turned off the pipelines since this will be my script repo and scratch files, no building for now
 echo $1
