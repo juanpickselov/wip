@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+source /Users/juanpmbr/prj/cmd/skr/bsh/sub01
+source /Users/juanpmbr/prj/cmd/skr/bsh/sub02
+
+echo $SUB01_ID
+echo $SUB02_ID
+echo "----------------------------------------"
+

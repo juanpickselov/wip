@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+
+usage() {
+    echo "----------------------------------------"
+    echo "Usage       : $(basename "$0") c, f, s"
+    echo "Description : Chrome, Firefox, or Safari"
+    echo "----------------------------------------"
+    exit 1
+}
+
+case "$1" in
+  c) MY_BROWSER="Google Chrome" ;;
+  f) MY_BROWSER="Firefox" ;;
+  s) MY_BROWSER="Safari" ;;
+  -h|"") usage ;;
+  *)
+esac
+
+URLS=(
+  "about:blank"
+  "https://cobra.dev/"
+  "https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/reference/ASLR_cmds.html"
+  "https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptX/AppleScriptX.html#//apple_ref/doc/uid/10000156-BCICHGIE"
+  "https://doc.rust-lang.org/book/"
+  "https://github.com/juanpickselov"
+  "https://go.dev/"
+  "https://quii.gitbook.io/learn-go-with-tests"
+  "https://www.gnu.org/software/bash/manual/bash.html"
+)
+
+if [[ "$MY_BROWSER" == "Google Chrome" ]]; then
+  osascript >/dev/null <<EOF
+tell application "$MY_BROWSER"
+  activate
+  if (count of windows) = 0 then
+    set targetWindow to make new window
+  else
+    set targetWindow to front window
+  end if
+tell targetWindow to set URL of active tab to "about:blank"
+$(for ((i=0; i<${#URLS[@]}; i++)); do
+  echo "  tell targetWindow to make new tab with properties {URL:\"${URLS[$i]}\"}"
+done)
+end tell
+EOF
+elif [[ "$MY_BROWSER" == "Firefox" ]]; then
+  open -a "$HOME/zutlz/ff/Firefox.app" "${URLS[0]}"
+  sleep 1
+  for ((i=1; i<${#URLS[@]}; i++)); do
+    open -a "$HOME/zutlz/ff/Firefox.app" "${URLS[$i]}"
+  done
+else
+  open -a "/Applications/$MY_BROWSER.app" "${URLS[0]}"
+  sleep 1
+  for ((i=1; i<${#URLS[@]}; i++)); do
+    open -a "/Applications/$MY_BROWSER.app" "${URLS[$i]}"
+  done
+fi

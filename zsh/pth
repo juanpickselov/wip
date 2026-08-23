@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+[[ "$1" == "-h" ]] && {
+  echo "-------------------------------"
+  echo "Usage       : $(basename "$0")"
+  echo "Description : list path entries"
+  echo "-------------------------------"
+  exit
+}
+
+IFS=":" read -ra PATH_ENTRIES <<< "$PATH"
+for entry in "${PATH_ENTRIES[@]}"; do
+  echo "$entry"
+done

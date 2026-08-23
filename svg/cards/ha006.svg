@@ -1,0 +1,16 @@
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="./ha007.svg">
+    <rect height="100%" width="100%" fill="#355e3b" opacity="0.8"/>
+    <text id="txt" x="50%" y="90" fill="#639" stroke="#639" stroke-width="0" font-size="3em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      Sometimes dinner would be waiting,
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="2.5s" begin="0" repeatCount="0"/>
+    </text>
+    <text id="txt" x="50%" y="140" fill="#639" stroke="#639" stroke-width="0" font-size="3em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      when Tom worked at:
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="2.5s" begin="0" repeatCount="0"/>
+    </text>
+    <image id="img" xlink:href="CompUSA_logo.svg" x="0" y="0" height="100%" width="100%">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="3s" begin="0" repeatCount="0"/>
+    </image>
+  </a>
+</svg>

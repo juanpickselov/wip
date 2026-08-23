@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN"
+	"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
+        
+<svg width="240" height="320" viewBox="0 0 240 320" 
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     version="1.1" baseProfile="tiny">
+    <circle transform="matrix(1.3663366,0.0,0.0,1.3505155,-67.0396,-49.773193)"  id="_1" cx="133.0" cy="92.0" r="50" fill="red" stroke="black" stroke-width="1"/>
+    <g id="slider_0" transform="translate(82.0,186.0)">                
+        <text display="none">type=slider</text>                
+        <rect x="0.5" y="-12.75" rx="5" ry="5" width="200" height="30" fill="none" stroke="rgb(255,165,0)" stroke-width="2" visibility="hidden">                    
+            <set attributeName="visibility" attributeType="XML" begin="slider_0.focusin" fill="freeze" to="visible"/>                    
+            <set attributeName="visibility" attributeType="XML" begin="slider_0.focusout" fill="freeze" to="hidden"/>                
+        </rect>                
+        <g id="slider_0_rule" >                    
+            <text display="none">type=rule</text>                    
+            <rect transform="matrix(1.0145711,0.0,0.0,1.0,-0.14571011,0.0)"   x="10.0" y="1.0" rx="3" ry="3" width="180" height="4" fill="none" stroke="rgb(73,46,55)" stroke-width="1.5"/>                
+        </g>                
+        <g id="slider_0_knob"  transform="translate(0,-5)">                    
+            <text display="none">type=knob</text>                    
+            <image transform="matrix(13.553926,0.0,0.0,0.46135393,6.3333282,2.6910095)"  width="1" height="25"              xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAZCAIAAAB/8tMoAAAAAXNSR0IArs4c6QAAAARnQU1BAACx              jwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAF9JREFU              GFdFw80KRUAAgNHv/R/FmqWyUOSmRN2bJLEgkvw2Y4xJ2dxTB2MM/zdG6/d9KbQ6uU6JkgIpD4TY              OPaZfR1Zpo5xqOnbgrb50pQJVR5RZD6/2CUNHT6eRRLYDwfARHOzUoReAAAAAElFTkSuQmCC">              </image>                    
+            <circle cx="13.0" cy="7.333344" r="16" fill="none" stroke="rgb(73,46,55)" stroke-width="1.5"/>                
+        </g>            
+    </g>
+</svg>

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "----------------------------"
+  echo "Usage       : $(basename "$0")"
+  echo "Description : open ws"
+  echo "----------------------------"
+  exit 1
+}
+
+if [ "$1" == "-h" ] || [ ! -z "$1" ]; then
+  usage
+fi
+
+open -a "Firefox" "https://myworkspace.jpmchase.com"
+exit 0

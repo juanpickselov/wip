@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "---------------------------------"
+  echo "Usage       : $(basename "$0") [file] [algor]"
+  echo "Description : cert check in cwd"
+  echo "---------------------------------"
+  exit 1
+}
+
+if [ "$1" == "--help" ] || [ "$1" == "-h" ] || [ -z "$1" ]; then
+  usage
+fi
+
+ALGOR="SHA256"
+if [ ! -z "$2" ]; then
+  ALGOR="$2"
+fi
+
+if [ ! -f "$1" ]; then
+  usage
+fi
+
+hash_function=""
+
+case "$ALGOR" in
+  SHA256)
+    hash_function="sha256sum"
+    ;;
+  SHA1)
+    hash_function="sha1sum"
+    ;;
+  SHA512)
+    hash_function="sha512sum"
+    ;;
+  MD5)
+    hash_function="md5sum"
+    ;;
+esac
+
+if [ -n "$hash_function" ]; then
+  if command -v "$hash_function" &> /dev/null; then
+    "$hash_function" "$1" | awk '{print $1}'
+  else
+    echo "Error: $hash_function not found. Falling back to openssl."
+    openssl dgst -"$(echo "$ALGOR" | tr '[:upper:]' '[:lower:]')" "$1" | awk '{print $2}'
+  fi
+else
+  echo "Algorithm not supported, using openssl"
+  openssl dgst -"$(echo "$ALGOR" | tr '[:upper:]' '[:lower:]')" "$1" | awk '{print $2}'
+fi
+
+ALGOR=""
+exit 0

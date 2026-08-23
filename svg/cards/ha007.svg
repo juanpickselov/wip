@@ -1,0 +1,20 @@
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="./ha008.svg">
+    <rect height="100%" width="100%" fill="#355e3b" opacity="0.8"/>
+    <text id="txt" x="50%" y="90" fill="#639" stroke="#639" stroke-width="0" font-size="3em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      They'll go back to...
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="2.5s" begin="0" repeatCount="0"/>
+    </text>
+    <image id="img" xlink:href="hawaiiTurtle.jpg" x="25%" y="20%" height="50%" width="50%">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="3s" begin="0" repeatCount="0"/>
+    </image>
+    <text id="txt" x="50%" y="550" fill="#639" stroke="#639" stroke-width="0" font-size="3em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      in 
+      <tspan style="text-decoration:line-through">5 Years,</tspan>
+      <tspan style="text-decoration:line-through">10 Years,</tspan>
+      20, 30 ???
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="2.5s" begin="0" repeatCount="0"/>
+    </text>
+
+  </a>
+</svg>

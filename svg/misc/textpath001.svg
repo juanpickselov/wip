@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<svg width="100%" height="100%" viewBox="100% 100% 1000 300" version="1.2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- <path id="MyPath"
+          d="M 100 200
+             C 200 100 300   0 400 100
+             C 500 200 600 300 700 200
+             C 800 100 900 100 900 100" /> -->
+    <path id="MyPath"
+          d="M 200 300
+             C 300 200 400   100 500 200
+             C 600 300 700 400 800 300
+             C 900 200 1000 200 1000 200" />
+  </defs>
+
+  <rect x="5%" y="5%" width="90%" height="85%" fill="#f6f6f6" stroke="#333" stroke-width="8" />
+ 
+  <use xlink:href="#MyPath" fill="none" stroke="#777"  stroke-width="4" />
+ 
+  <text font-family="Verdana,Arial" font-weight="bold" font-size="68" fill="#0076cc" >
+    <textPath xlink:href="#MyPath">
+      Welcome to Code Club
+    </textPath>
+  </text>
+</svg>

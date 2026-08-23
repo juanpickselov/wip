@@ -1,0 +1,11 @@
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="./ha999.svg">  
+    <rect height="100%" width="100%" fill="#355e3b" opacity="0.8">
+      <animate attributeType="XML" attributeName="opacity" from="0" to="0.8" dur="1.5s" repeatCount="0"/>
+    </rect> 
+    <text id="msg" x="50%" y="45%" fill="#639" stroke="#639" stroke-width="1" font-size="6em" font-family="Zapfino,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      I Love You
+      <animate attributeType="xml" attributeName="y" from="0" to="45%" dur="1s"/>
+    </text>
+  </a>
+</svg>

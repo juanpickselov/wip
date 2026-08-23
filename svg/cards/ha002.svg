@@ -1,0 +1,19 @@
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="./ha003.svg">
+    <rect height="100%" width="100%" fill="#355e3b" opacity="0.8">
+      <animate attributeType="XML" attributeName="opacity" from="0" to="0.8" dur="1.5s" repeatCount="0"/>
+    </rect>
+    <text id="msg" x="50%" y="180" fill="#639" stroke="#639" stroke-width="1" font-size="5.5em" font-family="Zapfino,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      Eighteen
+      <animate attributeType="xml" attributeName="y" from="0" to="180" dur="1s" />
+    </text>
+    <text id="msg" x="50%" y="400" fill="#639" stroke="#639" stroke-width="1" font-size="5.5em" font-family="Zapfino,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      Years!
+      <animate attributeType="xml" attributeName="y" from="2000" to="400" dur="1s" />
+    </text>
+    <text x="50%" y="520" fill="#639" stroke="#639" stroke-width="0" font-size="2.5em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      18 years ago, someone's lips began to quiver!
+      <animate attributeType="xml" attributeName="y" from="2000" to="520" dur="2s" />
+    </text>
+  </a>
+</svg>

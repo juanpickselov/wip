@@ -1,0 +1,16 @@
+<svg version="1.1" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600">
+    <defs>
+        <g id="operational">
+            <path fill="rgb(207,231,245)" stroke="none" stroke-width="2" d="M 241,165 C 291,165 330,203 330,254 330,304 291,342 241,342 190,342 152,304 152,254 152,203 190,165 241,165 Z M 152,165 L 152,165 Z M 330,343 L 330,343 Z"/>
+            <path fill="none" stroke="rgb(128,128,128)" stroke-width="2" d="M 241,165 C 291,165 330,203 330,254 330,304 291,342 241,342 190,342 152,304 152,254 152,203 190,165 241,165"/>
+            <path fill="none" stroke="rgb(128,128,128)" stroke-width="2" d="M 152,165 L 152,165"/>
+            <path fill="none" stroke="rgb(128,128,128)" stroke-width="2" d="M 330,343 L 330,343"/>
+            <path fill="rgb(207,231,245)" stroke="none" d="M 292,196 C 302,204 305,216 299,224 292,232 279,231 269,223 259,214 256,202 263,194 269,186 282,187 292,196 Z M 274,180 L 274,180 Z M 287,2dd38 L 287,238 Z"/>
+            <path fill="none" stroke="rgb(128,128,128)" stroke-width="2" d="M 292,196 C 302,204 305,216 299,224 292,232 279,231 269,223 259,214 256,202 263,194 269,186 282,187 292,196"/>
+            <path fill="#f00" stroke="rgb(53,53,53)" stroke-width="4" d="M 152,254 C 211,254 270,254 330,254"/>
+        </g>
+    </defs>
+    <use xlink:href="#operational">
+        <animateTransform attributeType="XML" attributeName="transform" type="scale" from="0" to="1.5" dur="6s" fill="freeze" />
+    </use>
+</svg>

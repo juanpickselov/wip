@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-10 -10 900 800">
+<rect id="BB" x="0" y="0" height="100%" width="100%" fill="#333"/>
+  <defs>
+    <!-- <g id="group1">
+      <rect x="100" y="100" width="100" height="20" fill="#888" />
+      <rect x="100" y="160" width="100" height="20" fill="#888" />
+      <ellipse cx="150" cy="140" rx="30" ry="100" fill="#bbb" />
+      <rect x="100" y="130" width="100" height="20" fill="#888" />
+    </g> -->
+    <g id="group2">
+      <rect x="100" y="100" width="100" height="10" fill="#888" />
+      <rect x="100" y="168" width="100" height="10" fill="#888" />
+      <ellipse cx="150" cy="140" rx="30" ry="30" fill="#bbb" />
+      <rect x="100" y="135" width="100" height="10" fill="#888" />
+    </g>
+  </defs>
+    <g id="group1">
+      <rect x="100" y="100" width="100" height="20" fill="#888" />
+      <rect x="100" y="160" width="100" height="20" fill="#888" />
+      <ellipse cx="150" cy="140" rx="30" ry="100" fill="#bbb" />
+      <rect x="100" y="130" width="100" height="20" fill="#888" />
+    </g>
+  
+  <use xlink:href="#group1" transform="translate(120,100), rotate(120), scale(1.5)" />
+  <use xlink:href="#group2" transform="translate(800,100), rotate(120), scale(2)" />
+
+  <circle id="redDot" cx="30" cy="0" r="8" fill="#f00" />
+  <use xlink:href="#redDot" transform="translate(-30,0)" />
+  <use xlink:href="#redDot" transform="translate(-30,30)" />
+</svg>

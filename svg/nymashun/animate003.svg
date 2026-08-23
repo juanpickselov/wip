@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg">
+  <ellipse cx="150" cy="75" rx="10" ry="40" stroke="#0f0" stroke-width="8" fill="none">
+   <animate attributeName="ry" dur="3s" values="10;50;10" repeatCount="indefinite"/>
+   <animate attributeName="rx" dur="3s" values="10;50;10" repeatCount="indefinite"/>
+  </ellipse>
+</svg>

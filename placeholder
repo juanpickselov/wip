@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+usage() {
+    echo "----------------------------"
+    echo "usage : $(basename "$0") <directory_name>"
+    echo "description : procure app"
+    echo "----------------------------"
+    exit 0
+}
+
+utlz="$HOME/zutlz"
+cd "$utlz" || exit 1
+
+# Check for help flag, empty argument, or if the directory does not exist
+if [ "$1" == "-h" ] || [ -z "$1" ] || [ ! -d "$utlz/$1" ]; then
+    usage
+fi
+
+# Backup the existing directory if the backup name is available
+if [ ! -d "${utlz}/$1-prev" ]; then
+    mv "$1" "$1-prev"
+fi
+
+# Create the fresh directory after backing up the old one
+mkdir "$1"
+
+unset utlz

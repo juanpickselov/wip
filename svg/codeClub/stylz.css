@@ -1,0 +1,7 @@
+a text {fill:#0076cc;font-variant:small-caps;font-weight:700;text-decoration:none}
+a text:hover, a text:active {font-weight:700;text-decoration:underline}
+text {fill:#f48000;font-family:Verdana,sans-serif}
+textPath tspan {fill:#fff;stroke:#444;stroke-width:2px}
+
+.presenter {font-size:32px;font-weight:700}
+.title {font-family:Verdana, Arial, sans-serif;font-size:46px;font-weight:700}

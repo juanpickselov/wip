@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "-----------------------------------------"
+  echo "Usage: $(basename "$0")"
+  echo "Description: reading resources"
+  echo "-----------------------------------------"
+  exit 1
+}
+
+if [[ "$1" = "-h" || ! -z "$1" ]]; then
+  usage
+fi
+
+browser="Firefox"
+urls=(
+    "about:blank"
+    "https://doc.rust-lang.org/book/"
+    "https://go.dev/"
+    "https://quii.gitbook.io/learn-go-with-tests"
+    "https://www.gnu.org/software/bash/manual/bash.html"
+)
+
+for url in "${urls[@]}"; do
+    osascript -e "tell application \"$browser\"" \
+              -e "activate" \
+              -e "open location \"$url\"" \
+              -e "end tell"
+done

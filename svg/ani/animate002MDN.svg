@@ -1,0 +1,13 @@
+<svg width="100%" height="100%"  viewBox="0 0 500 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <text x="170" y="15" style="fill:#333;font-size:6px;font-family:Verdana;font-weight:700">Dev Shell Terminal</text>
+  <path id="pth1" d="M 200 20 L 200 100" stroke="#ccc" stroke-width="1"/>
+  <text style="fill:#333;font-size:6px;font-family:Verdana;font-weight:700">  
+    <textPath href="#pth2">Environment</textPath>
+  </text>
+  <path id="pth2" d="M 0 -20 L 0 60" fill="none" stroke="none" stroke-width="4"  >
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto-reverse" >
+       <mpath xlink:href="#pth1"/>
+    </animateMotion>
+  </path>
+</svg>

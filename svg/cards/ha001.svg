@@ -1,0 +1,12 @@
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="./ha002.svg">
+    <rect height="100%" width="100%" fill="#355e3b" opacity="0.8"/>
+    <text id="txt" x="50%" y="60" fill="#639" stroke="#639" stroke-width="0" font-size="2.2em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">Many, many, years ago...</text>
+    <image id="img" xlink:href="columbus.jpg" x="25%" y="18%" height="50%" width="50%">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="3s" begin="0" repeatCount="0"/>
+    </image>
+    <text id="qst" x="50%" y="80%" fill="#639" stroke="#639" stroke-width="0" font-size="2.2em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">I am new to Columbus will you show me around?
+      <animate attributeType="xml" attributeName="y" from="120%" to="80%" dur="3s" begin="0" repeatCount="0"/>
+    </text>
+  </a>
+</svg>

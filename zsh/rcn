@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "-----------------------------------------"
+  echo "Usage: $(basename "$0")"
+  echo "Description: empty intellij projects list"
+  echo "-----------------------------------------"
+  exit 1
+}
+
+if [ "$1" = "-h" ]; then
+  usage
+fi
+
+find "/Users/$(whoami)/Library/Application Support/JetBrains" -name recentProjects.xml -type f -delete

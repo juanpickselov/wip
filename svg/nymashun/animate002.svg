@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<svg width="520" height="520" viewBox="0 0 520 520"
+   xmlns="http://www.w3.org/2000/svg" version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <path d="M 200 50 L 300 150 L 200 150 L 200 50" stroke="#006" stroke-width="3" fill="none" id="theMotionPath"/>
+  <path d="M 50 100 L 100 200 L 150 100 L 50 100" stroke="#006" stroke-width="3" fill="none" id="motionPathTwo"/> 
+  <circle cx="200" cy="50" r="8" fill="#00f" />
+  <circle cx="200" cy="150" r="8" fill="#00f" />
+  <circle cx="300" cy="150" r="8" fill="#00f" />
+  <circle cx="" cy="" r="6" fill="red">
+     <animateMotion dur="6s" repeatCount="indefinite">
+       <mpath xlink:href="#theMotionPath"/>
+    </animateMotion>
+  </circle>
+  <rect x="-10" y="-10" height="22" width="22" stroke="#001" stroke-width="3" fill="none">
+     <animateMotion dur="3s" repeatCount="indefinite" rotate="auto">
+       <mpath xlink:href="#motionPathTwo"/>
+    </animateMotion>
+  </rect>
+</svg>

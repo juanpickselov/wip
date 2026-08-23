@@ -1,0 +1,18 @@
+#!/usr/bin/env osascript
+
+on run argv
+	-- Check if an argument was passed
+	if (count of argv) is 0 then
+		log "Error: Please provide a JDK version number."
+		return
+	end if
+
+	-- Get the version from the first argument
+	set jdkVersion to item 1 of argv
+
+	-- Define the paths based on your setup
+	set pathPrefix to "/Users/juanpmbr/zutlz/jdk/jdk-"
+	set pathSuffix to ".jdk/Contents/Home"
+	set javaHome to pathPrefix & jdkVersion & pathSuffix
+
+end run

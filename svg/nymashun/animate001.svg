@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg width="120" height="120"  viewBox="0 0 120 120"
+   xmlns="http://www.w3.org/2000/svg" version="1.1"
+   xmlns:xlink="http://www.w3.org/1999/xlink" >
+  <path d="M10,110 A120,120 -45 0,1 110 10 A120,120 -45 0,1 10,110"
+    stroke="#333" stroke-width="3" fill="none" id="theMotionPath"/>
+  <circle cx="10" cy="110" r="8" fill="#ccc"  />
+  <circle cx="110" cy="10" r="8" fill="#ccc"  />
+  <circle cx="" cy="" r="6" fill="#800">
+     <animateMotion dur="6s" repeatCount="indefinite">
+       <mpath xlink:href="#theMotionPath"/>
+    </animateMotion>
+  </circle>
+</svg>

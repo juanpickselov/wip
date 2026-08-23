@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+find . -maxdepth 1 -type d -print | grep -v '^.$' | sort -f | sed 's|./||'
+echo
+find . -maxdepth 1 -type f -print | sort -f | sed 's|./||'

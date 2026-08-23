@@ -1,0 +1,26 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50%" cy="50%" r="2" fill="lime">
+        <animate attributeType="XML" attributeName="r" from="2" to="300" dur="6s" repeatCount="12" />
+        <animate attributeType="XML" attributeName="fill" from="black" to="white" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="10%" cy="10%" r="6" fill="lime">
+        <animate attributeType="XML" attributeName="r" from="6" to="60" dur="6s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="fill" from="black" to="blue" dur="1s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="cx" from="10%" to="40%" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="90%" cy="10%" r="6" fill="lime">
+        <animate attributeType="XML" attributeName="r" from="6" to="60" dur="6s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="fill" from="black" to="orange" dur="1s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="cx" from="90%" to="60%" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="10%" cy="90%" r="6" fill="lime">
+        <animate attributeType="XML" attributeName="r" from="6" to="60" dur="6s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="fill" from="black" to="green" dur="1s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="cx" from="10%" to="40%" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="90%" cy="90%" r="6" fill="lime">
+        <animate attributeType="XML" attributeName="r" from="6" to="60" dur="6s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="fill" from="black" to="magenta" dur="1s" repeatCount="indefinite" />
+        <animate attributeType="XML" attributeName="cx" from="90%" to="60%" dur="6s" repeatCount="indefinite" />
+    </circle>
+</svg>

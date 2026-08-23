@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "----------------------------------"
+  echo "Usage       : $(basename "$0") [args]"
+  echo "Description : git status args"
+  echo "----------------------------------"
+}
+
+if [[ "$1" == "-h" ]]; then
+  usage
+  exit 1
+fi
+
+git status "$@"
+exit 0

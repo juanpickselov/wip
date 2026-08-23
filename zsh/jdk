@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+usage() {
+    echo "----------------------------"
+    echo "Usage       : source $(basename ${BASH_SOURCE:-$0}) <version>"
+    echo "Description : Switch JDK and launch NetBeans"
+    echo "Example     : source $(basename ${BASH_SOURCE:-$0}) 17"
+    echo "----------------------------"
+    return 0 2>/dev/null || exit 0
+}
+
+# FIXED: Changed single [ ] to double [[ ]] for robust Zsh/Bash compatibility
+if [[ "$1" == "-h" || -z "$1" ]]; then
+    usage
+fi
+
+PATH_PREFIX="/Users/juanpmbr/zutlz/jdk/jdk-"
+PATH_SUFFIX=".jdk/Contents/Home"
+SCRIPT_PARAM="$1"
+
+export JAVA_HOME="${PATH_PREFIX}${SCRIPT_PARAM}${PATH_SUFFIX}"
+
+# Prevent duplicating paths if you run the script multiple times
+if [[ ":$PATH:" != *":$JAVA_HOME/bin:"* ]]; then
+    export PATH="$JAVA_HOME/bin:$PATH"
+fi
+
+echo "Java switched to: $JAVA_HOME"
+java -version
+
+open /Users/juanpmbr/zutlz/ij/IntelliJ\ IDEA.app

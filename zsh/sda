@@ -1,0 +1,32 @@
+#!/usr/bin/env osascript
+
+set appList to {"Firefox", "Safari", "IntelliJ IDEA.app"}
+repeat with appName in appList
+    try
+        if application appName is running then
+            tell application appName to quit
+        end if
+    on error error_message number error_number
+        if error_number is equal to -128 then
+            -- Keep Calm and Carry On
+        else
+            display dialog error_message
+        end if
+    end try
+end repeat
+
+delay 5
+
+set isRunning to false
+repeat with appName in appList
+    if application appName is running then
+        set isRunning to true
+        exit repeat
+    end if
+end repeat
+
+if isRunning then
+    display dialog "Some applications failed to quit. Shutting down anyway."
+end if
+
+tell application "System Events" to shut down

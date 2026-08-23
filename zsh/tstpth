@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+[ -e "$1" ] && echo "path valid" || echo "path invalid"

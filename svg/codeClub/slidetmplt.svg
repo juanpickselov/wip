@@ -1,0 +1,20 @@
+<?xml-stylesheet type="text/css" href="stylz.css"?>
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- viewBox="0 0 480 640" -->
+  <title>Your Title Here</title>
+  <defs>
+   <radialGradient fy="25%" fx="25%" cy="50%" cx="50%" id="radial">
+     <stop stop-color="#60bafc" offset="0%"/>
+     <stop stop-color="#409adc" offset="50%"/>
+     <stop stop-color="#0074c0" offset="100%"/>
+   </radialGradient>
+   <path fill="none" d="M36,120 C200,20 360,220 628,120" id="curve"/>
+  </defs>
+
+  <circle stroke="#005a9c" fill="url(#radial)" r="76" cy="128" cx="408"/>
+
+  <text fill="#f48000" font-size="46" font-weight="700">
+    <textPath xlink:href="#curve">some text <tspan fill="#fff">goes</tspan> here</textPath>
+  </text>
+  <a xlink:href="welcome.svg"><text x="1%" y="90%">linktext</text></a> 
+</svg>

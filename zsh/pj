@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+usage() {
+  echo "--------------------------------"
+  echo "Usage       : $(basename "$0") project_path"
+  echo "Description : go to project path"
+  echo "--------------------------------"
+  exit 1
+}
+
+if [[ "$1" == "-h" || -z "$1" ]]; then
+  usage
+fi
+
+PROJPATH="$HOME/prj"
+
+if [[ -d "$PROJPATH/$1" ]]; then
+  cd "$PROJPATH/$1" || exit
+else
+  echo "where you going?"
+  exit 1
+fi
+unset PROJPATH

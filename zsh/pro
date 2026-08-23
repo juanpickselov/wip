@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+
+PROJ_PATH="$HOME/prj"
+UTLZ="$HOME/zutlz"
+usage() {
+  echo "------------------------------------------------------"
+  echo "Usage       : $(basename "$0") [editor] [project folder or file]"
+  echo "Description : open project or file with editor"
+  echo "Editor      : i idea, ic idea ce, c VSCode, p pico"
+  echo "------------------------------------------------------"
+  exit 1
+}
+
+list_projects() {
+  echo "projects:"
+  cd $HOME/prj
+  ls -d */ | sed 's/\///'
+  echo
+}
+
+if [[ "$1" == "-h" ]]; then
+  usage
+  exit 1
+fi
+
+FOLDER_OR_FILE="$2"
+
+if [ -z "$FOLDER_OR_FILE" ]; then
+  list_projects
+  exit 0
+fi
+
+case "$1" in
+  c)
+    if [ -e "$PROJ_PATH/$FOLDER_OR_FILE" ]; then
+      code "$PROJ_PATH/$FOLDER_OR_FILE"
+    elif [ -e "$FOLDER_OR_FILE" ]; then
+      code "$FOLDER_OR_FILE"
+    else
+      list_projects
+    fi
+    ;;
+  i)
+    if [ -e "$PROJ_PATH/$FOLDER_OR_FILE" ]; then
+      open -n "$UTLZ/ij/IntelliJ IDEA.app" --args nosplash "$PROJ_PATH/$FOLDER_OR_FILE"
+    elif [ -e "$FOLDER_OR_FILE" ]; then
+      open -n "$UTLZ/ij/IntelliJ IDEA.app" --args nosplash "$FOLDER_OR_FILE"
+    else
+      list_projects
+    fi
+    ;;
+  ic)
+    if [ -e "$PROJ_PATH/$FOLDER_OR_FILE" ]; then
+      open -n "$UTLZ/ijce/IntelliJ IDEA CE.app" --args nosplash "$PROJ_PATH/$FOLDER_OR_FILE"
+    elif [ -e "$FOLDER_OR_FILE" ]; then
+      open -n "$UTLZ/ijce/IntelliJ IDEA CE.app" --args nosplash "$FOLDER_OR_FILE"
+    else
+      list_projects
+    fi
+    ;;
+  p)
+    if [ -e "$FOLDER_OR_FILE" ]; then
+      pico "$FOLDER_OR_FILE"
+    fi
+    ;;
+  *)
+    echo "Which editor: i, ic, c, p"
+    ;;
+esac

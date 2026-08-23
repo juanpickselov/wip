@@ -1,0 +1,25 @@
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="./ha010.svg">
+    <rect height="100%" width="100%" fill="#355e3b" opacity="0.8"/>
+    <text id="txt" x="50%" y="90" fill="#639" stroke="#639" stroke-width="0" font-size="3em" font-family="Cochin,serif" font-weight="400" text-anchor="middle" style="text-shadow:2px 2px 1px #222">
+      And they have a family now...
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="2.5s" begin="0" repeatCount="0"/>
+    </text>
+    <image id="img" xlink:href="family001.jpg" x="15" y="90" height="320" width="240">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="6s" begin="0" repeatCount="0"/>
+    </image>
+    <image id="img" xlink:href="fishing.jpg" x="290" y="120" height="40%" width="40%">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="6s" begin="0" repeatCount="0"/>
+    </image>
+    <image id="img" xlink:href="z.jpg" x="800" y="120" height="40%" width="40%">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="6s" begin="0" repeatCount="0"/>
+    </image>
+    <image id="img" xlink:href="hope.jpg" x="215" y="420" height="30%" width="30%">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="6s" begin="0" repeatCount="0"/>
+    </image>
+    <image id="img" xlink:href="nandm.jpg" x="715" y="420" height="30%" width="30%">
+      <animate attributeType="xml" attributeName="opacity" from="0" to="1" dur="6s" begin="0" repeatCount="0"/>
+    </image>
+
+  </a>
+</svg>

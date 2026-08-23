@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <a xlink:href="https://developer.mozilla.org/en/SVG">
+    <text x="100" y="100" text-anchor="middle" text-decoration="none" fill="blue" stroke="#f00">SVG on MDN</text>
+  </a>
+</svg>

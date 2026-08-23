@@ -1,0 +1,14 @@
+<?xml-stylesheet href="slides.css" type="text/css"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.2" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid meet" class="slide">
+  <defs>
+    <rect id="outline" x="15" y="15" rx="8" ry="8" height="95%" width="95%" fill="#ddd" />
+    <image id="bg" x="18" y="18" width="94.5%" height="94.5%" xlink:href="zbg004.png" />
+  </defs>
+  <a xlink:href="./s002.svg">
+    <use xlink:href="#outline" stroke="#444" stroke-width="8"/>
+    <use xlink:href="#bg" />
+    <text x="60" y="60"  class="txt">Placeholder Text</text>
+    <text x="60" y="110" class="txt">Placeholder Text</text>
+    <text x="28%" y="95%" class="txt-msg" textLength="400">ABCD Internal Use Only</text>
+  </a>
+</svg>

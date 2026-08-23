@@ -1,0 +1,26 @@
+<?xml-stylesheet type="text/css" href="stylz.css"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" height="100%" width="100%">
+  <title>Welcome to Code Club</title>
+  <defs>
+   <radialGradient fy="25%" fx="25%" cy="50%" cx="50%" id="radial">
+     <stop stop-color="#60bafc" offset="0%"/>
+     <stop stop-color="#409adc" offset="50%"/>
+     <stop stop-color="#0074c0" offset="100%"/>
+   </radialGradient>
+   <path fill="none" d="M36,120 C200,20 360,220 628,120" id="curve"/>
+   <text class="presenter" id="presenter">with Tom Goulet</text>
+  </defs>
+
+  <circle stroke="#005a9c" fill="url(#radial)" r="76" cy="128" cx="408"/>
+
+  <text class="title">
+    <textPath xlink:href="#curve">Welcome to <tspan>Code</tspan> Club</textPath>
+  </text>
+  <use xlink:href="#curve" stroke="#f48000" stroke-width="3">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0,0" to="1,12" dur="2s" fill="freeze" />
+  </use>
+  <use xlink:href="#presenter">
+    <animateTransform attributeName="transform" attributeType="XML" type="translate" from="0,320" to="120,320" additive="sum" begin="2s" dur="1s" fill="freeze"/>
+  </use>
+  <a xlink:href="svglogo.svg"><text x="1%" y="90%">Today's Topic</text></a> 
+</svg>

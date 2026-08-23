@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<svg version="1.2" baseProfile="tiny" viewBox="0 0 21000 28000" preserveAspectRatio="xMidYMid" fill-rule="evenodd" clip-path="url(#presentation_clip_path)" stroke-width="28.222" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xml:space="preserve">
+ <defs>
+  <clipPath id="presentation_clip_path" clipPathUnits="userSpaceOnUse">
+   <rect x="0" y="0" width="21000" height="28000"/>
+  </clipPath>
+ </defs>
+ <g id="id2" class="Master_Slide" clip-path="url(#presentation_clip_path)">
+  <g id="bg-id2" visibility="visible" class="Background">
+   <rect fill="none" stroke="none" x="0" y="0" width="21000" height="28000"/>
+  </g>
+  <g id="bo-id2" visibility="visible" class="BackgroundObjects"/>
+ </g>
+ <g id="id1" class="Slide" visibility="visible" clip-path="url(#presentation_clip_path)">
+  <g class="Group">
+   <g class="com.sun.star.drawing.PolyPolygonShape">
+    <g>
+     <path fill="none" stroke="rgb(128,128,128)" d="M 1269,2159 L 1269,2159"/>
+    </g>
+   </g>
+   <g class="com.sun.star.drawing.PolyPolygonShape">
+    <g>
+     <path fill="none" stroke="rgb(128,128,128)" d="M 18541,23622 L 18541,23622"/>
+    </g>
+   </g>
+   <g class="com.sun.star.drawing.CustomShape">
+    <g>
+     <path fill="rgb(53,94,0)" stroke="none" d="M 10481,2998 C 14599,2998 17745,6143 17745,10261 17745,14379 14599,17525 10481,17525 6363,17525 3218,14379 3218,10261 3218,6143 6363,2998 10481,2998 Z M 3218,2998 L 3218,2998 Z M 17746,17526 L 17746,17526 Z"/>
+     <path fill="none" stroke="rgb(53,94,0)" d="M 10481,2998 C 14599,2998 17745,6143 17745,10261 17745,14379 14599,17525 10481,17525 6363,17525 3218,14379 3218,10261 3218,6143 6363,2998 10481,2998"/>
+     <path fill="none" stroke="rgb(53,94,0)" d="M 3218,2998 L 3218,2998"/>
+     <path fill="none" stroke="rgb(53,94,0)" d="M 17746,17526 L 17746,17526"/>
+     <rect fill="none" stroke="none" x="3219" y="2999" width="14528" height="14528"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

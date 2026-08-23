@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600">
+  <title>My SVG Example</title>
+  <polygon points="100,90 120,80 125,70 135,112 158,181 113,184 72,185 54,181 41,175 27,162 15,158 3,155 -11,113 -39,78 -29,60 -27,42 -20,-1 -17,-23 -15,-34 -14,-39 -14,-42 -14,-45 100,0" transform="translate(506,161) scale(1.036,1.15) "/>
+</svg>

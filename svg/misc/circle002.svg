@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%">
+  <title>ViewBox Fun</title>
+  <circle r="120" cx="130" cy="140" fill="#f00" stroke="#111" stroke-width="12" />
+  <circle r="120" cx="410" cy="140" fill="#0f0" stroke="#111" stroke-width="12" />
+  <circle r="120" cx="130" cy="420" fill="#00f" stroke="#111" stroke-width="12" />
+  <circle r="120" cx="410" cy="420" fill="#f0e431" stroke="#111" stroke-width="12" />
+  <circle r="105" cx="130" cy="140" fill="none" stroke="#111" stroke-width="3" />
+  <circle r="105" cx="410" cy="140" fill="none" stroke="#111" stroke-width="3" />
+  <circle r="105" cx="130" cy="420" fill="none" stroke="#111" stroke-width="3" />
+  <circle r="105" cx="410" cy="420" fill="none" stroke="#111" stroke-width="3" />
+</svg>

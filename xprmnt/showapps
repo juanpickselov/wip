@@ -1,0 +1,14 @@
+#!/usr/bin/env osascript
+
+tell application "System Events"
+    -- Get the name of every process that is not a background-only process
+    set runningApps to name of every process where background only is false
+end tell
+
+-- Display the list in a dialog box (optional)
+tell me
+    activate
+    choose from list runningApps with prompt "Currently running applications:" with multiple selections allowed
+end tell
+
+return runningApps
