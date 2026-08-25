@@ -24,4 +24,8 @@ fi
 # Create the fresh directory after backing up the old one
 mkdir "$1"
 
+if [ "$1" = "code" ] && [ ! -d "${utlz}/$1/code-portable-data" ]; then
+  mkdir "$1/code-portable-data"
+fi
+
 unset utlz
