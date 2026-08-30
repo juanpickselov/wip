@@ -3,7 +3,7 @@
 usage() {
   echo "----------------------------------"
   echo "Usage       : $(basename "$0") [args]"
-  echo "Description : git push args"
+  echo "Description : git push to all remotes"
   echo "----------------------------------"
 }
 
@@ -12,5 +12,16 @@ if [[ "$1" == "-h" ]]; then
   exit 1
 fi
 
-git push "$@"
+remotes=$(git remote)
+
+if [[ -z "$remotes" ]]; then
+  echo "Error: No git remotes configured."
+  exit 1
+fi
+
+for remote in $remotes; do
+  echo "Pushing to remote: $remote..."
+  git push "$remote" "$@"
+done
+
 exit 0
