@@ -7,4 +7,8 @@
 - instead of doskey on Windows
 - similar to mywrkspc
 - scripts for Mac/Linux get the chmod +x after copying to their destination directory
+
+## Bash/ZSH
+
 ### Subroutines Over Loop Blocks
+
