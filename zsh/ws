@@ -12,5 +12,5 @@ if [ "$1" == "-h" ] || [ ! -z "$1" ]; then
   usage
 fi
 
-open -a "Firefox" "https://myworkspace.jpmchase.com"
+open -a "Firefox" "https://workspace.jpmchase.com/"
 exit 0
