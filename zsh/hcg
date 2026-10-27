@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+UTLZ="$HOME/zutlz"
 usage() {
   echo "----------------------------"
   echo "Usage       : $(basename "$0")"
@@ -12,5 +13,5 @@ if [ "$1" == "-h" ] || [ ! -z "$1" ]; then
   usage
 fi
 
-code $HOME/zdocs/hcg/info
+open -n "$UTLZ/ij/IntelliJ IDEA.app" --args nosplash $HOME/zdocs/hcg/info
 exit 0
