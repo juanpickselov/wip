@@ -15,7 +15,7 @@ if [[ "$1" == "-h" || -z "$1" ]]; then
 fi
 
 PATH_PREFIX="/Users/juanpmbr/zutlz/jdk/jdk-"
-PATH_SUFFIX=".jdk/Contents/Home"
+PATH_SUFFIX="/Contents/Home"
 SCRIPT_PARAM="$1"
 
 export JAVA_HOME="${PATH_PREFIX}${SCRIPT_PARAM}${PATH_SUFFIX}"
